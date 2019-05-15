@@ -4,10 +4,10 @@
   "newProjectRoot": "projects",
   "projects": {
     "AngularProject": {
-      "root": "",
-      "sourceRoot": "src",
+      "root": "projects/restaurant/",
+      "sourceRoot": "projects/restaurant/src",
       "projectType": "application",
-      "prefix": "app",
+      "prefix": "Restaurent",
       "schematics": {
         "@schematics/angular:component": {
           "style": "less"
@@ -18,16 +18,16 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/AngularProject",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "index": "projects/restaurant/src/index.html",
+            "main": "projects/restaurant/src/main.ts",
+            "polyfills": "projects/restaurant/src/polyfills.ts",
+            "tsConfig": "projects/restaurant/src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "projects/restaurant/src/favicon.ico",
+              "projects/restaurant/src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "projects/restaurant/src/styles.less"
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -36,8 +36,8 @@
             "production": {
               "fileReplacements": [
                 {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "replace": "projects/restaurant/src/environments/environment.ts",
+                  "with": "projects/restaurant/src/environments/environment.prod.ts"
                 }
               ],
               "optimization": true,
@@ -79,17 +79,17 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
+            "main": "projects/restaurant/src/test.ts",
+            "polyfills": "projects/restaurant/src/polyfills.ts",
+            "tsConfig": "projects/restaurant/src/tsconfig.spec.json",
+            "karmaConfig": "projects/restaurant/src/karma.conf.js",
             "styles": [
-              "src/styles.less"
+              "projects/restaurant/src/styles.less"
             ],
             "scripts": [],
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "projects/restaurant/src/favicon.ico",
+              "projects/restaurant/src/assets"
             ]
           }
         },
@@ -97,8 +97,8 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "projects/restaurant/src/tsconfig.app.json",
+              "projects/restaurant/src/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
